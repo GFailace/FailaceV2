@@ -1,0 +1,140 @@
+html, body{    
+    margin:0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #757575;
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased !important;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.content{
+    display: flex;
+}
+aside{
+    display: block;
+    width: 23%;
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    padding: 80px 20px;
+    background: #F5F5F5;
+    color: #757575;
+    height: 100vh;
+}
+aside img {
+    border-radius: 50%;
+    margin: 40px auto;
+}
+aside i {
+    margin-top: 30px;
+    color: #757575;
+}
+main{
+    margin-top: 40px;
+    margin-left: 25%; 
+    width: 70%;
+    text-align: center;
+}
+main a{
+    cursor: pointer;
+    color: #03a87c;
+    transition: ease 0.2s;
+}
+main a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #015942;
+}
+.tecnologias{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 200;
+}
+hr{
+    width: 80%;
+}
+footer{
+    text-align: center;
+}
+.projetos{
+    margin: 40px auto;
+}
+.projetos p{
+    color: #757575;
+}
+.card{
+    margin: 10px auto;
+    color: #757575;
+}
+.card-text{
+    color: #757575;
+
+}
+.btn{
+    background: #03a87c;
+    color: #FFF;
+}
+.btn:hover{
+    background: #015942;
+    color: #FFF;
+}
+
+/* Media Queries */
+@media(max-width:1199px){
+    .tecnologias{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;
+    }
+}
+
+@media(max-width:812px){
+    .tecnologias{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;
+    }
+    .nome{
+        text-align: center;
+    }
+    aside{
+        display: none !important;
+    }
+    main{
+        width: 100%;
+        margin: 40px auto;
+        padding-right: 20px;
+        padding-left: 10px;
+        text-align: center;
+    }
+}
+@media(max-width:499px){
+    .tecnologias{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;
+    }
+    aside{
+        display: none !important;
+    }
+    main{
+        margin: 20px 5px;
+        padding: 0 auto;
+    }
+    .nome{
+        text-align: center;
+    }
+}
